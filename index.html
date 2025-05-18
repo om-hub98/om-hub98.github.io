@@ -1,144 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Omraj | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omraj Pradhan | SDE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="script.js" defer></script>
 
-  <!-- Font Awesome for Icons -->
-  <script src="https://kit.fontawesome.com/a2e0e6cfd3.js" crossorigin="anonymous"></script>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f7fa;
-      color: #333;
-      line-height: 1.6;
-      animation: fadeIn 1.2s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .container {
-      max-width: 850px;
-      margin: 50px auto;
-      padding: 30px;
-      background-color: #ffffff;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      border-radius: 12px;
-      text-align: center;
-    }
-
-    .profile-img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #3498db;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #2c3e50;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 1.75rem;
-      color: #3498db;
-      margin-top: 0;
-    }
-
-    p {
-      font-size: 1.1rem;
-      margin: 10px 0;
-    }
-
-    .highlight {
-      color: #2980b9;
-      font-weight: 600;
-    }
-
-    .tech-stack {
-      margin-top: 20px;
-      padding: 15px;
-      background-color: #ecf0f1;
-      border-radius: 8px;
-    }
-
-    .tech-stack strong {
-      color: #2c3e50;
-    }
-
-    .social-links {
-      margin-top: 30px;
-    }
-
-    .social-links a {
-      display: inline-block;
-      margin: 0 12px;
-      padding: 10px 16px;
-      border-radius: 30px;
-      background-color: #3498db;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .social-links a i {
-      margin-right: 8px;
-    }
-
-    .social-links a:hover {
-      background-color: #2c80b4;
-      transform: translateY(-2px);
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1.5rem; }
-      .tech-stack { font-size: 0.95rem; }
-    }
-  </style>
 </head>
+
 <body>
-  <div class="container">
-    <img src="Profile pic.jpg" alt="Profile Picture" class="profile-img" />
-    
-    <h1>👋 Hello, Friends!</h1>
-    <h2>I'm <span class="highlight">Omraj</span></h2>
-    <p>A passionate <strong>Software Engineer</strong> with over 2 years of experience building web applications and backend systems.</p>
-    <p>I love diving into new fields — especially where <span class="highlight">technology meets business</span>. My goal is to create efficient, scalable, and user-focused solutions that make a difference.</p>
+    <div class="container">
+        <div class="left">
+            <img src="Profile pic.jpg" alt="Profile Picture" />
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achivements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <section id="home">
+                <div class="home-text">
+                    <h1>Hello, I'm <span class="highlight">Omraj Pradhan</span></h1>
+                    <h2 class="typing-text">Software Engineer | Full-Stack Developer | Java | Angular | React | AI
+                        Automations</h2>
+                    <p>I build fast, clean, and scalable web applications using modern technologies.</p>
+                    <a href="Omraj Resume.pdf" download class="resume-btn">Download Resume</a>
+                </div>
+            </section>
+            <section id="about">
+                <h2><i class="fas fa-user"></i> About Me</h2>
 
-    <div class="tech-stack">
-      <strong>Tech Stack & Skills:</strong><br/>
-      Java · Spring Boot · PostgreSQL · MySQL · GitHub · JSP/Servlets · Firebase · ReactJS · AngularJS · Automation (App Script) · Team Management · Agile & Scrum
-    </div>
+                <p>
+                    <i class="fas fa-laptop-code"></i>
+                    I’m a passionate Software Engineer focused on building efficient, scalable web applications and
+                    backend systems. I love exploring where technology meets business and aim to create tools that
+                    simplify life, enhance productivity, and solve real-world problems.
+                </p>
 
-    <p style="margin-top: 20px;">Let’s build something great together 🚀</p>
-    <h4>Connect with me --></h4>
-    <div class="social-links">
-      <a href="https://github.com/om-hub98" target="_blank">
-        <i class="fab fa-github"></i>GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/omraj-pradhan-4234541b4/" target="_blank">
-        <i class="fab fa-linkedin"></i>LinkedIn
-      </a>
-      <a href="https://leetcode.com/u/omraj_98/" target="_blank">
-        <i class="fas fa-code"></i>LeetCode
-      </a>
+                <p>
+                    <i class="fas fa-code"></i>
+                    With 2.5 years of corporate experience, I specialize in developing RESTful APIs and deploying web
+                    applications using <strong>JSP, Servlets, and Spring Boot</strong>. I design responsive UI/UX using
+                    <strong>React</strong> and <strong>Angular</strong>, and automate workflows using <strong>Make,
+                        Zapier, and n8n</strong>.
+                </p>
+
+                <p>
+                    <i class="fas fa-language"></i>
+                    I bring strong communication skills—<strong>proficient in English and Hindi</strong>,
+                    <strong>conversational in Bengali</strong>, and <strong>fluent in Nepali</strong>. I’m always
+                    curious and eager to learn new technologies that help me grow and make a greater impact.
+                </p>
+            </section>
+
+
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3 class="job-title">Associate Software Engineer</h3>
+                    <p class="company-name">Bassetti Ites pvt. ltd. <span class="date">Mar 2023 – Present</span></p>
+                    <ul class="job-details">
+                        <li>Developed and maintained web applications using JSP, Servlets, jQuery, Hibernate, and
+                            PostgreSQL.</li>
+                        <li>Integrated third-party APIs like Google Calendar, LDAP to enhance application functionality.
+                        </li>
+                        <li>Created and optimized database schemas and SQL queries for improved performance.</li>
+                        <li>Enhanced search and indexing performance by 30% through code optimization.</li>
+                        <li>Identified, tested, and resolved bugs and issues across the application.</li>
+                        <li>Collaborated with cross-functional teams to optimize application performance.</li>
+                        <li>Conducted code reviews and provided actionable feedback to peers.</li>
+                        <li>Built low-code automation workflows for internal team processes.</li>
+                        <li>Developed AI-driven automations and agentic AI solutions to streamline operations.</li>
+                        <li>Implemented CI/CD pipelines for automated testing and deployment.</li>
+                        <li>Participated in Agile ceremonies, including sprint planning and retrospectives.</li>
+                        <li>Mentored junior developers and interns on best practices and coding standards.</li>
+
+
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="job-title">Intern</h3>
+                    <p class="company-name">Bassetti Ites pvt. ltd. — <span class="date">Dec 2022 – Feb 2023</span></p>
+                    <ul class="job-details">
+                        <li>Built backend services with Spring Boot and MySQL.</li>
+                        <li>Developed RESTful APIs for data retrieval and manipulation.</li>
+                        <li>Created dynamic JSP-based forms for customer data capture.</li>
+                        <li>Wrote unit tests and improved code coverage to 85%.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-java"></i><span>Java</span></div>
+                    <div class="skill-card"><i class="fas fa-leaf"></i><span>Spring Boot</span></div>
+                    <div class="skill-card"><i class="fas fa-database"></i><span>Hibernate</span></div>
+                    <div class="skill-card"><i class="fab fa-angular"></i><span>AngularJS</span></div>
+                    <div class="skill-card"><i class="fab fa-react"></i><span>ReactJS</span></div>
+                    <div class="skill-card"><i class="fab fa-html5"></i><span>HTML</span></div>
+                    <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                    <div class="skill-card"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                    <div class="skill-card"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+                    <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
+                    <div class="skill-card"><i class="fab fa-docker"></i><span>Docker</span></div>
+                    <div class="skill-card"><i class="fab fa-google"></i><span>Google Cloud Platform</span></div>
+                    <div class="skill-card"><i class="fas fa-robot"></i><span>n8n</span></div>
+                    <div class="skill-card"><i class="fas fa-cogs"></i><span>Make.com</span></div>
+                    <div class="skill-card"><i class="fas fa-bolt"></i><span>Zapier</span></div>
+                </div>
+
+            </section>
+
+            <section id="achievements">
+                <h2>Achievements</h2>
+                <div class="achievement-cards">
+                    <div class="achievement-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>2 years at Bassetti Group</h3>
+                        <p>Completed 2 years at Bassetti Group from where, I started my corporate journey.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Team Lead</h3>
+                        <p>Led a team to build an AI automation solutions for HR, Marketing and Sales teams.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Comptitive Programming</h3>
+                        <p>Coding and Problem solving on platform like Leetcode, HackerRank.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Team Work</h3>
+                        <p>Team Work is my strength to solve any complex task.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="contact">
+                <h2>Contact</h2>
+
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> omrajpradhan98@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 8670292557</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/omraj-pradhan-4234541b4/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/om-hub98" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/u/omraj_98/" target="_blank"><img
+                                src="https://leetcode.com/favicon.ico" alt="LeetCode" /></a>
+                        <a href="https://www.chess.com/member/om_raj_pradhan" target="_blank"><img
+                                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/chessdotcom.svg"
+                                alt="Chess.com" /></a>
+                        <a href="https://www.hackerrank.com/profile/omrajpradhan29" target="_blank"><img
+                                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/hackerrank.svg"
+                                alt="HackerRank" /></a>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
     </div>
-  </div>
 </body>
+
 </html>

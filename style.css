@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #faedcd;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.left {
+    background-color: #d4a373;
+    color: white;
+    padding: 2rem;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.left img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.right {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+h2 {
+    color: #d4a373;
+    border-bottom: 2px solid #d4a373;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.experience-item {
+  margin-bottom: 2rem;
+  border-left: 4px solid #d4a373;
+  padding-left: 1rem;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.company-name {
+  font-style: italic;
+  margin: 0.3rem 0 0.8rem;
+  color: #555;
+}
+
+.date {
+  font-weight: normal;
+  color: #777;
+}
+
+.job-details {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #444;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background-color: #fff5e1;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(212, 163, 115, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.skill-card i {
+  font-size: 2rem;
+  color: #d4a373;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card span {
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Animation when in view */
+.skill-card.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.contact-details {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.contact-details p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-details i {
+  color: #d4a373;
+}
+
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #d4a373;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.social-links img:hover {
+  filter: none;
+  transform: scale(1.2);
+}
+.social-links a i {
+  color: #d4a373;
+  font-size: 1.5rem;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%) invert(41%) sepia(39%) saturate(423%) hue-rotate(348deg) brightness(96%) contrast(90%);
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover,
+.social-links a i:hover {
+  transform: scale(1.2);
+}
+
+/* Home Section */
+/* Home Section */
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #faedcd;
+  padding: 2rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;  /* Prevents text from overflowing */
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.home-profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #d4a373;
+  margin-bottom: 1rem;
+}
+
+.home-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.home-text .highlight {
+  color: #d4a373;
+}
+
+/* Typing text animation */
+.typing-text {
+  font-size: 1.2rem;
+  color: #555;
+  border-right: 2px solid #d4a373;
+  white-space: nowrap;   /* Ensures text doesn't break into new lines */
+  overflow: hidden;      /* Prevents overflow beyond the text container */
+  display: inline-block;
+  /*width: 0;             */
+  /* animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite; */
+}
+
+/* Typing effect */
+@keyframes typing {
+  to {
+    width: 100%;   
+  }
+}
+
+/* Cursor effect (visible only during animation) */
+.typing-text::after {
+  /* content: "|"; */
+  font-size: 1.5rem;
+  color: #d4a373;
+  margin-left: 0.2rem;
+  animation: blink 0.75s step-end infinite;
+}
+
+/* Cursor blink effect */
+@keyframes blink {
+  50% {
+    opacity: 0;  
+  }
+}
+
+/* Rest of the styles for Home Section */
+.home-text p {
+  margin-top: 1rem;
+  color: #444;
+  max-width: 500px;
+}
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background-color: #d4a373;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #b38256;
+}
+
+/* Background animation */
+@keyframes gradientBackground {
+  0% {
+    background: linear-gradient(45deg, #faedcd, #d4a373);
+  }
+  50% {
+    background: linear-gradient(45deg, #d4a373, #faedcd);
+  }
+  100% {
+    background: linear-gradient(45deg, #faedcd, #d4a373);
+  }
+}
+
+/* .home-section {
+  animation: gradientBackground 10s ease infinite;
+} */
+
+/* Responsive */
+@media (min-width: 768px) {
+  .home-content {
+    flex-direction: row;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .home-profile {
+    margin-bottom: 0;
+  }
+}
+
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background-color: #d4a373;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #b38256;
+}
+
+/* Typing animation */
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Background Animation (Shifting Gradient) */
+@keyframes gradientBackground {
+  0% {
+    background: linear-gradient(45deg, #faedcd, #d4a373);
+  }
+  50% {
+    background: linear-gradient(45deg, #d4a373, #faedcd);
+  }
+  100% {
+    background: linear-gradient(45deg, #faedcd, #d4a373);
+  }
+}
+
+.home-section {
+  animation: gradientBackground 10s ease infinite;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .home-content {
+    flex-direction: row;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .home-profile {
+    margin-bottom: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .left img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+}
